@@ -33,6 +33,7 @@
 		01EDD04C271766DA00F41894 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		01EDD04D271766DA00F41894 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
 		01EDD05027176BBD00F41894 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
+		01EDD052271773E200F41894 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		08D2DC8E053E8E77520BAB9F /* Pods-LearningRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-LearningRxSwift/Pods-LearningRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		27551034F1E3017F08B5CA03 /* Pods-LearningRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningRxSwift.release.xcconfig"; path = "Target Support Files/Pods-LearningRxSwift/Pods-LearningRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		6FC3FC4F7AF6FBDF31602358 /* Pods_LearningRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +72,7 @@
 		01CBF50E271621A50038B1BD /* LearningRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				01EDD052271773E200F41894 /* MyPlayground.playground */,
 				01EDD04B271766AF00F41894 /* View */,
 				01EDD048271764E200F41894 /* Model */,
 				01CBF50F271621A50038B1BD /* AppDelegate.swift */,

@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             .modelSelected(Food.self)
             .subscribe(onNext: { (foodObject) in
                 let foodVc = self.storyboard?.instantiateViewController(identifier: "FoodDetailsVC") as! FoodDetailsVC
-                foodVc.foodName = foodObject.image
+                foodVc.imageName.accept(foodObject.image)
                 self.navigationController?.pushViewController(foodVc, animated: true)
             }).disposed(by: disposeBag)
         
