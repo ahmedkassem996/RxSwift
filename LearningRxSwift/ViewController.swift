@@ -13,11 +13,16 @@ import RxCocoa
 class ViewController: UIViewController {
     
     
-    let tableViewItems = Observable.just([Food.init(name: "Food1", image: "food1"),
+    let tableViewItems = BehaviorRelay.init(value: [Food.init(name: "Food1", image: "food1"),
                                          Food.init(name: "Food2", image: "food2"),
-                                         Food.init(name: "Food3", image: "food3")])
+                                         Food.init(name: "Food3", image: "food3"),
+                                         Food.init(name: "Food4", image: "food4"),
+                                         Food.init(name: "Food5", image: "food5"),
+                                         Food.init(name: "Food6", image: "food6"),
+                                         Food.init(name: "Food7", image: "food7")])
         let disposeBag = DisposeBag()
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +31,17 @@ class ViewController: UIViewController {
         
         tableView.register(UINib(nibName: "FoodTableViewCell", bundle: nil), forCellReuseIdentifier: "foodCell")
         
-        tableViewItems.bind(to: tableView
+        searchBar.rx.text.orEmpty
+            .throttle(.microseconds(300), scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .map({
+                query in
+                self.tableViewItems.value.filter({
+                    food in
+                    query.isEmpty || food.name.lowercased().contains(query.lowercased())
+                })
+            })
+            .bind(to: tableView
             .rx
             .items(cellIdentifier: "foodCell", cellType: FoodTableViewCell.self)) {tv , tableViewItems, cell in
             cell.foodName.text = tableViewItems.name

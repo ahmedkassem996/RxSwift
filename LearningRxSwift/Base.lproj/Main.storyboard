@@ -16,27 +16,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cix-zk-rDl">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="BxP-EH-qmC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BxP-EH-qmC" secondAttribute="trailing" id="3Qx-Wd-waB"/>
+                            <constraint firstItem="BxP-EH-qmC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6w6-lJ-jjE"/>
                             <constraint firstItem="cix-zk-rDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D5D-X6-DW2"/>
+                            <constraint firstItem="cix-zk-rDl" firstAttribute="top" secondItem="BxP-EH-qmC" secondAttribute="bottom" id="GbX-MC-bHo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cix-zk-rDl" secondAttribute="bottom" id="V4i-DZ-kja"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cix-zk-rDl" secondAttribute="trailing" id="mqq-bV-pjM"/>
-                            <constraint firstItem="cix-zk-rDl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="snQ-lj-v2c"/>
+                            <constraint firstItem="BxP-EH-qmC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w6g-3I-Q64"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="aNY-2G-tx7"/>
                     <connections>
+                        <outlet property="searchBar" destination="BxP-EH-qmC" id="Xqc-c0-YGS"/>
                         <outlet property="tableView" destination="cix-zk-rDl" id="JOw-EH-8WV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="119"/>
+            <point key="canvasLocation" x="904.79999999999995" y="118.29085457271366"/>
         </scene>
         <!--Food DetailsVC-->
         <scene sceneID="1nj-vJ-XcR">
