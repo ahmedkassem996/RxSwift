@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		01CBF517271621A50038B1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CBF515271621A50038B1BD /* Main.storyboard */; };
 		01CBF519271621A80038B1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CBF518271621A80038B1BD /* Assets.xcassets */; };
 		01CBF51C271621A80038B1BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CBF51A271621A80038B1BD /* LaunchScreen.storyboard */; };
+		01EDD04A271764FD00F41894 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EDD049271764FD00F41894 /* Food.swift */; };
+		01EDD04E271766DA00F41894 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EDD04C271766DA00F41894 /* FoodTableViewCell.swift */; };
+		01EDD04F271766DA00F41894 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01EDD04D271766DA00F41894 /* FoodTableViewCell.xib */; };
+		01EDD05127176BBD00F41894 /* FoodDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EDD05027176BBD00F41894 /* FoodDetailsVC.swift */; };
 		14A0199F04201B26F22703C5 /* Pods_LearningRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC3FC4F7AF6FBDF31602358 /* Pods_LearningRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		01CBF518271621A80038B1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01CBF51B271621A80038B1BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01CBF51D271621A80038B1BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01EDD049271764FD00F41894 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		01EDD04C271766DA00F41894 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		01EDD04D271766DA00F41894 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		01EDD05027176BBD00F41894 /* FoodDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsVC.swift; sourceTree = "<group>"; };
 		08D2DC8E053E8E77520BAB9F /* Pods-LearningRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-LearningRxSwift/Pods-LearningRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		27551034F1E3017F08B5CA03 /* Pods-LearningRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningRxSwift.release.xcconfig"; path = "Target Support Files/Pods-LearningRxSwift/Pods-LearningRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		6FC3FC4F7AF6FBDF31602358 /* Pods_LearningRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,9 +71,12 @@
 		01CBF50E271621A50038B1BD /* LearningRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				01EDD04B271766AF00F41894 /* View */,
+				01EDD048271764E200F41894 /* Model */,
 				01CBF50F271621A50038B1BD /* AppDelegate.swift */,
 				01CBF511271621A50038B1BD /* SceneDelegate.swift */,
 				01CBF513271621A50038B1BD /* ViewController.swift */,
+				01EDD05027176BBD00F41894 /* FoodDetailsVC.swift */,
 				01CBF515271621A50038B1BD /* Main.storyboard */,
 				01CBF518271621A80038B1BD /* Assets.xcassets */,
 				01CBF51A271621A80038B1BD /* LaunchScreen.storyboard */,
@@ -74,13 +85,29 @@
 			path = LearningRxSwift;
 			sourceTree = "<group>";
 		};
+		01EDD048271764E200F41894 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01EDD049271764FD00F41894 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01EDD04B271766AF00F41894 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01EDD04C271766DA00F41894 /* FoodTableViewCell.swift */,
+				01EDD04D271766DA00F41894 /* FoodTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		09388F8D23454A199376E955 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				08D2DC8E053E8E77520BAB9F /* Pods-LearningRxSwift.debug.xcconfig */,
 				27551034F1E3017F08B5CA03 /* Pods-LearningRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CBF51C271621A80038B1BD /* LaunchScreen.storyboard in Resources */,
+				01EDD04F271766DA00F41894 /* FoodTableViewCell.xib in Resources */,
 				01CBF519271621A80038B1BD /* Assets.xcassets in Resources */,
 				01CBF517271621A50038B1BD /* Main.storyboard in Resources */,
 			);
@@ -208,6 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CBF514271621A50038B1BD /* ViewController.swift in Sources */,
+				01EDD04A271764FD00F41894 /* Food.swift in Sources */,
+				01EDD04E271766DA00F41894 /* FoodTableViewCell.swift in Sources */,
+				01EDD05127176BBD00F41894 /* FoodDetailsVC.swift in Sources */,
 				01CBF510271621A50038B1BD /* AppDelegate.swift in Sources */,
 				01CBF512271621A50038B1BD /* SceneDelegate.swift in Sources */,
 			);
