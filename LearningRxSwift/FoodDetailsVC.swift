@@ -19,16 +19,6 @@ class FoodDetailsVC: UIViewController {
     @IBOutlet weak var foodImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        imageName
-            .map ({
-            name in
-                UIImage.init(named: name)
-        })
-        .bind(to: foodImg
-            .rx
-            .image).disposed(by: disposeBag)
     }
 
 }
